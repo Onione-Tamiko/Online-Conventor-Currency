@@ -1,7 +1,6 @@
 from tkinter import *
-import xml.etree.ElementTree as ET
 
-import requests, pprint
+import requests
 from bs4 import BeautifulSoup
 
 from threading import Thread
@@ -127,7 +126,7 @@ if __name__ == "__main__":
     window = Tk()
     window.title("Конвентер валют")
     window.geometry('300x500')
-##    window.resizable(width = False, height = False)
+    window.resizable(width = False, height = False)
 
     entry_frame = Frame(window)
     currency_frame = Frame(window)
@@ -142,7 +141,6 @@ if __name__ == "__main__":
     label_currency.pack(side = RIGHT)
 
     quantiry_entry = Entry(entry_frame)
-##    quantiry_entry.insert(0,'empty')
     quantiry_entry.pack(side = LEFT,fill=BOTH,expand=1)
     
     Menu_Code_Currency()
